@@ -16,5 +16,11 @@ namespace GUIApp
         {
             InitializeComponent();
         }
+    private void btnMoveWord_Click(object sender, EventArgs e)
+        {
+            string myWord = tbxUserInput.Text;
+            rtbOutput.Text += myWord + "\n";
+            tbxUserInput.Text = "";
+        }
     }
 }
